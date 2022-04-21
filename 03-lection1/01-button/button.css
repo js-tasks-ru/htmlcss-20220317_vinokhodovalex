@@ -1,1 +1,80 @@
-/* Стилизация кнопки */
+:root {
+    --primary: #4263EB;
+    --secondary: #7048E8;
+    --border: #ACB5BD;
+    --primary-active: #2342C0;
+    --secondary-active: #5028C6;
+    --border-active: #ACB5BD;
+    --button-animation: 200ms ease-in-out;
+    --font-regular: 16px;
+    --font-primary: #fff;
+    --font-secondary: #fff;
+    --font-alternative: #495057;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* buttons */
+.button {
+    line-height: 19px;
+    padding: 0.9rem 3.5rem;
+    border: var(--border) solid 1px;
+    border-radius: 8px;
+    transition: opacity var(--button-animation), background var(--button-animation);
+}
+
+.button-primary {
+    background-color: var(--primary);
+    color: var(--font-primary);
+}
+
+.button-secondary {
+    background-color: var(--secondary);
+    color: var(--font-secondary);
+}
+
+.button-alternative {
+    color: var(--font-alternative);
+}
+
+/* hover active disabled */
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    border: var(--border) solid 1px;
+}
+
+.button:focus,
+.button:active,
+.button:hover {
+    outline: none;
+    border: var(--border-active) solid 1px;
+}
+
+.button-primary:focus,
+.button-primary:active,
+.button-primary:hover {
+    background-color: var(--primary-active);
+    color: var(--font-primary);
+}
+
+.button-secondary:focus,
+.button-secondary:active,
+.button-secondary:hover {
+    background-color: var(--secondary-active);
+    color: var(--font-secondary);
+}
+
+.button-alternative:focus,
+.button-alternative:active,
+.button-alternative:hover {
+    color: var(--font-alternative);
+}
