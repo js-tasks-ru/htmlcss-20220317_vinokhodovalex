@@ -4,7 +4,7 @@
     --border: #ACB5BD;
     --primary-active: #2342C0;
     --secondary-active: #5028C6;
-    --border-active: #ACB5BD;
+    --border-active: #212429;
     --button-animation: 200ms ease-in-out;
     --font-regular: 16px;
     --font-primary: #fff;
@@ -28,6 +28,7 @@ body {
     padding: 0.9rem 3.5rem;
     border: var(--border) solid 1px;
     border-radius: 8px;
+    cursor: pointer;
     transition: opacity var(--button-animation), background var(--button-animation);
 }
 
@@ -43,6 +44,7 @@ body {
 
 .button-alternative {
     color: var(--font-alternative);
+    background: none;
 }
 
 /* hover active disabled */
