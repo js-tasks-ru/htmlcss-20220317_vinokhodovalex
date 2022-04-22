@@ -1,0 +1,47 @@
+/* small css reset to unify the styles */
+h1,
+h2,
+p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* general text align */
+body {
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: aqua;
+}
+
+main {
+    background-color: blue;
+}
+
+header h1 {
+    background-color: red;
+}
+
+header nav {
+    background-color: orange;
+}
+
+main {
+    background-color: green;
+    padding: 2rem;
+}
+
+main article {
+    background-color: blue;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+footer {
+    background-color: pink;
+    font-size: 2rem;
+}
